@@ -20,3 +20,6 @@ end
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
+
+post = Post.find_or_create_by( title: 'Unique Post!', body: 'Unique Body!' );
+Comment.find_or_create_by( post: post, body: 'Unique Comment!' )
