@@ -16,15 +16,4 @@ class PostsController < ApplicationController
 
   def edit
   end
-
-#  def censor_posts(posts)
-#    if posts
-#      i = 0
-#      posts.each do |post|
-#        i += 1
-#        post.title = 'SPAM' if i % 5 == 0
-#      end
-#    end
-#   posts
-#  end
 end
